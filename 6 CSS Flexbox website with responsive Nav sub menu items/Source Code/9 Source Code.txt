@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website 5</title>
+        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li class="logo"><a href="#">MyWebsite</a></li>
+                <li class="navItem"><a href="#">Home</a></li>
+                <li class="navItem subz"><a href="#">About</a>
+                    <ul class="subNav">
+                        <li class="subItem"><a href="#">Item 1</a></li>
+                        <li class="subItem"><a href="#">Item 2</a></li>
+                        <li class="subItem"><a href="#">Item 3</a></li>
+                        <li class="subItem"><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li class="navItem subz"><a >Services</a>
+                    <ul class="subNav">
+                        <li class="subItem"><a href="#">Item 1</a></li>
+                        <li class="subItem"><a href="#">Item 2</a></li>
+                        <li class="subItem"><a href="#">Item 3</a></li>
+                        <li class="subItem"><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li class="navItem subz"><a >Products</a>
+                    <ul class="subNav">
+                        <li class="subItem"><a href="#">Item 1</a></li>
+                        <li class="subItem"><a href="#">Item 2</a></li>
+                        <li class="subItem"><a href="#">Item 3</a></li>
+                        <li class="subItem"><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li class="navItem"><a href="#">Contact</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="main">
+            <article><h2>Column 1</h2>
+            <p>Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Sapien pellentesque habitant morbi tristique senectus et. Amet aliquam id diam maecenas. Facilisis sed odio morbi quis commodo odio aenean sed. Nisl suscipit adipiscing bibendum est. Placerat vestibulum lectus mauris ultrices eros in cursus. Faucibus turpis in eu mi bibendum neque egestas congue. Nunc sed id semper risus in hendrerit gravida rutrum quisque. In metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Odio ut sem nulla pharetra diam sit. Varius quam quisque id diam vel quam elementum. Consequat mauris nunc congue nisi vitae suscipit.</p>
+            </article>
+            <div class="container"><h2>Column 2</h2><p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Auctor augue mauris augue neque gravida. Dui sapien eget mi proin sed libero enim. Duis ut diam quam nulla. Blandit libero volutpat sed cras ornare arcu dui. A cras semper auctor neque vitae. Sit amet facilisis magna etiam tempor orci eu. Amet purus gravida quis blandit turpis cursus in. Integer feugiat scelerisque varius morbi enim nunc. Fermentum iaculis eu non diam. Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Faucibus ornare suspendisse sed nisi lacus. Dictum sit amet justo donec. Etiam sit amet nisl purus.
+            </p>
+            <img src="https://dummyimage.com/600x400/000/fff">
+            <p>Quam pellentesque nec nam aliquam sem et tortor consequat id. Blandit cursus risus at ultrices mi tempus imperdiet. Vulputate sapien nec sagittis aliquam malesuada. Rhoncus dolor purus non enim praesent elementum facilisis. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Fringilla est ullamcorper eget nulla facilisi etiam. Semper risus in hendrerit gravida rutrum quisque non tellus. Facilisis mauris sit amet massa vitae tortor condimentum lacinia quis. Nunc sed blandit libero volutpat sed. Aliquam faucibus purus in massa. Pulvinar elementum integer enim neque volutpat. Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictum fusce ut placerat orci nulla.</p>
+        </div>
+            <aside><h2>Column 3</h2>
+                <img src="https://dummyimage.com/600x400/fff0f0/fff">
+                <img src="https://dummyimage.com/600x400/0ff0f0/fff">
+                <img src="https://dummyimage.com/600x400/fff000/fff">
+            <p>Vitae tortor condimentum lacinia quis vel eros. Scelerisque varius morbi enim nunc. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Quis blandit turpis cursus in hac habitasse platea dictumst. Mattis rhoncus urna neque viverra justo. Aliquet eget sit amet tellus cras. Enim tortor at auctor urna nunc. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Purus ut faucibus pulvinar elementum integer. Habitant morbi tristique senectus et netus. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. At elementum eu facilisis sed odio morbi quis commodo.</p>
+            </aside>
+        </div>
+        <footer class="footer">
+           <h2> &copy My Website</h2>
+           <p>Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Tellus integer feugiat scelerisque varius morbi enim nunc. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Neque convallis a cras semper auctor neque vitae. Arcu bibendum at varius vel pharetra vel.</p>
+        </footer>
+        <script src="app5.js"></script>
+    </body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    color:#474350;
+    font-size: 1em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.logo{
+    font-size: 1.3em;
+    padding:8px;
+
+}
+.logo a{
+    text-decoration: none;
+}
+.subz > a::after{
+    content: "\2195";
+    padding-left: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar , .subNav{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.subNav{
+    display: none;
+}
+.sactive .subNav{
+    display: block;
+}
+.sactive {
+    background-color:  #fafac6;
+}
+.sactive > a{
+ background-color: crimson;
+ color:white;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItem {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: none;
+    order: 3;
+}
+.toggle{
+    font-size:  1.8em;
+    padding:10px;
+    order: 1;
+}
+.active .navItem{
+    display: block;
+}
+.navItem a{
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.navItem a:hover{
+    background-color: black;
+    color:white;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+.main > * {
+    padding:10px;
+}
+.main h2{
+    display: block;
+    background-color:#474350 ;
+    color:white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+}
+.footer{
+    padding:20px;
+    text-align: center;
+}
+.main img{
+    max-width: 100%;
+    margin: auto;
+    padding:5px;
+    background-color: white;
+    text-align: center;
+    display: block;
+}
+.main > .container{
+    order: 1;
+    background-color: #fafac6;
+}
+
+.main > article {
+    background-color:#f8fff4;
+    order: 2;
+}
+.main > aside {
+    background-color:#fcffeb;
+    order: 3;
+}
+.header , .footer{
+    background-color:#fecdaa;
+}
+.footer{
+    min-height: 200px;
+    background-color:#474350 ;
+    color:white;
+}
+@media all and (min-width: 960px) {
+    .main {
+       flex:1;
+       flex-direction: row;
+    }
+    .main > .container{
+        flex:1 ;
+        order: 1;
+        background-color: #fafac6;
+    }
+    .main > article,
+    .main > aside {
+        flex: 0 0 20vw;
+    }
+   
+    .sactive .subNav{
+        display: block;
+    }
+    .navItem {
+        position: relative;
+        display:block;
+        width:auto;
+        order: 1;
+    }
+    .navbar {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+    }
+    .sactive .subNav{
+        display: block;
+        position: absolute;
+        left: 0;
+        top:60px;
+        min-width:120px;
+        text-align: left;
+        background-color:#474350;
+    }
+    .subNav a{
+        color:white;
+    }
+    .toggle{
+        display: none;
+        flex:1;
+        text-align: right;
+    }
+    .logo{
+        flex:1;
+        order: 0;
+    }
+}
+
+
+const toggler = document.querySelector('.toggle');
+const navbar = document.querySelector('.navbar');
+const navItems = document.querySelectorAll('.navItem');
+console.log(navItems);
+
+navItems.forEach((ele)=>{
+    console.log(ele);
+    if(ele.querySelector('.subNav')){
+        ele.addEventListener('click',(e)=>{
+            if(ele.classList.contains('sactive')){
+                ele.classList.remove('sactive');
+            }else{
+                ele.classList.add('sactive');
+             }   
+        })
+    }
+})
+
+
+toggler.addEventListener('click',(e)=>{
+    if(navbar.classList.contains('active')){
+        navbar.classList.remove('active');
+        toggler.querySelector('a').innerHTML = '<i class="fas fa-bars"></i>';
+    }else{
+        navbar.classList.add('active');
+        toggler.querySelector('a').innerHTML = '<i class="fas fa-window-close"></i>';
+    }
+})

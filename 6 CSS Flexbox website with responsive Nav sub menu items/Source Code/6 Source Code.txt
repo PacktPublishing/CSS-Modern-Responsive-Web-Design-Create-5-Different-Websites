@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website 5</title>
+        <link rel="stylesheet" href="style5.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header class="header">
+        <nav>
+            <ul class="navbar">
+                <li class="logo"><a href="#">MyWebsite</a></li>
+                <li class="navItem"><a href="#">Home</a></li>
+                <li class="navItem"><a href="#">About</a>
+
+                </li>
+                <li class="navItem"><a href="#">Services</a>
+                    <ul class="subNav">
+                        <li class="subItem"><a href="#">Item 1</a></li>
+                        <li class="subItem"><a href="#">Item 2</a></li>
+                        <li class="subItem"><a href="#">Item 3</a></li>
+                        <li class="subItem"><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li class="navItem"><a href="#">Products</a>
+                    <ul class="subNav">
+                        <li class="subItem"><a href="#">Item 1</a></li>
+                        <li class="subItem"><a href="#">Item 2</a></li>
+                        <li class="subItem"><a href="#">Item 3</a></li>
+                        <li class="subItem"><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li class="navItem"><a href="#">Contact</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="main">
+            <article>Column 1</article>
+            <div class="container">Column 2</div>
+            <aside>Column 3</aside>
+        </div>
+        <footer class="footer">
+            Footer
+        </footer>
+        <script src="app5.js"></script>
+    </body>
+</html>
+
+* {
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    color:#474350;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    font-size: 1.3em;
+    padding:8px;
+
+}
+.logo a{
+    text-decoration: none;
+}
+.navbar , .subNav{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.subNav{
+    display: none;
+}
+.sactive .subNav{
+    display: block;
+}
+.sactive {
+    background-color: crimson;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.navItem {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: none;
+    order: 3;
+}
+.toggle{
+    font-size:  1.8em;
+    padding:10px;
+    order: 1;
+}
+.active .navItem{
+    display: block;
+}
+.navItem a{
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+.navItem a:hover{
+    background-color: black;
+    color:white;
+}
+.main {
+    display: flex;
+    flex: 1;
+}
+.main > .container{
+    flex:1 ;
+    order: 1;
+    background-color: #fafac6;
+}
+.main > article,
+.main > aside {
+    flex: 0 0 20vw;
+}
+.main > article {
+    background-color:#f8fff4;
+    order: 2;
+}
+.main > aside {
+    background-color:#fcffeb;
+    order: 3;
+}
+.header , .footer{
+    background-color:#fecdaa;
+}
+.footer{
+    min-height: 200px;
+}
+@media all and (min-width: 960px) {
+    .footer{
+        background-color: red;
+    }
+    .sactive .subNav{
+        display: block;
+    }
+    .navItem {
+        position: relative;
+        display:block;
+        width:auto;
+        order: 1;
+    }
+    .navbar {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+
+    }
+    .toggle{
+        display: none;
+        flex:1;
+        text-align: right;
+    }
+    .logo{
+        flex:1;
+        order: 0;
+    }
+}
+

@@ -1,0 +1,13 @@
+body{
+
+}
+
+#wrapper{
+    background-color: #ddd;
+}
+.page{
+    height: auto;
+    min-height:100vh;
+    padding: 60px 10px;
+    background-color: #eee;
+}

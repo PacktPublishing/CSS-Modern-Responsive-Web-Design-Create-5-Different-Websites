@@ -1,0 +1,337 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+    <head><title>CSS Grid Website 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   <style>
+    #mainHeader{
+        grid-area:header;
+        height: auto;
+        overflow: hidden;
+    }
+    .wrapper{
+        grid-template-areas: 
+        "header header header"
+        "main leftSide rightSide"
+        "footer footer footer";
+        grid-template-rows: 200px 1fr 200px;
+    }
+    @media only screen and (max-width:800px){
+        .wrapper{
+            grid-template-areas: 
+            "header"
+            "main"
+            "leftSide"
+            "rightSide"
+            "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 1fr 1fr 1fr 100px;
+        }
+    }
+   </style>    
+</head>
+    <body>
+        <div class="navCon">
+            <nav class="navbar">
+                <input type="checkbox" class="navTog" id="navTog">
+                <label for="navTog" class="menuBar"><i class="fas fa-bars"></i></label>
+                <div class="menuItems">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <a href="#" class="logo">MyLOGO</a>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <header id="mainHeader">
+                <div class="jumbotron">
+                <h2>Welcome to  my Website</h2>
+                <h3>Tagline for my website wow</h3>
+                </div>
+            </header>
+            <div id="leftSide">
+                <h2>New Information </h2>
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/fff000/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn blue">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mainContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit cursus risus at ultrices mi tempus imperdiet nulla</p>
+                <p>Enim blandit volutpat maecenas volutpat blandit aliquam. Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere. Morbi tempus iaculis urna id volutpat lacus laoreet non. Ac tortor vitae purus faucibus ornare suspendisse sed nisi. Semper viverra nam libero justo laoreet sit amet cursus sit. Egestas integer eget aliquet nibh praesent tristique magna sit. Ullamcorper a lacus vestibulum sed arcu non. Cras semper auctor neque vitae tempus quam pellentesque nec. Rutrum quisque non tellus orci ac auctor. Cursus vitae congue mauris rhoncus aenean. Elementum curabitur vitae nunc sed.</p>
+            </div>
+            <aside id="rightSide">
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/0ff0f0/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn red">Read more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/0f0f0f/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn green">Read more</button>
+                    </div>
+                </div>
+            </aside>
+            <footer id="mainFooter">Footer Content</footer>
+        </div>
+    </body>
+</html>
+
+CSS
+
+body{
+    
+}
+.navCon{
+    background-color: black;
+    width: 100%;
+    margin:3rem 0;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr ;
+}
+.navbar > *{
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "main leftSide rightSide"
+    "footer footer footer";
+    grid-template-columns:  1fr 20%  20%;
+    grid-template-rows: 1fr 200px;
+    grid-row-gap:10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+.jumbotron{
+    width:80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:20px;
+    max-height: 200px;
+    margin: 20px auto;
+    background-color:lightsalmon;
+    text-align: center;
+}
+.jumbotron h2{
+    font-size: 2.5em;
+    margin:0;
+}
+.jumbotron h3{
+    font-size: 1.5em;
+    margin:0;
+}
+#mainContent p::first-letter  {
+    font-size: 2em;
+    color:red;
+}
+.card {
+    background-color: white;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+.card img{
+    max-width: 100%;
+
+}
+.card .content{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 5px;
+    display: block;
+}
+.btn {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border:1px solid #ddd;
+    width: 100%;
+    margin-top: 5px;
+}
+.blue{
+    background-color: mediumblue;
+}
+.green{
+    background-color: mediumspringgreen
+}
+.red{
+    background-color: mediumvioletred;
+}
+.btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+
+
+.menuItems{
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, auto) 1fr;
+    grid-gap:12px;
+    align-self: center;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:red;
+}
+.menuBar, .navTog {
+    display: none;
+
+}
+.navbar{
+    padding:10px;
+}
+.menuBar{
+    padding: 10px;
+    color:white;
+    font-size: 3em;
+}
+.logo{
+    padding:1rem;
+    font-size: 3em;
+}
+
+#leftSide{
+    grid-area: leftSide;
+}
+#mainContent{
+    grid-area: main;
+}
+#rightSide {
+    grid-area: rightSide;
+}
+#mainFooter {
+    grid-area:footer;
+    text-align: center;
+    padding:30px;
+    color:#ddd;
+    background-color: black;
+}
+
+.wrapper > * {
+    border: 1px solid black;
+    background-color: #eee;
+    border-radius: 10px;
+    padding:15px;
+}
+
+@media only screen and (max-width:800px){
+    body{
+        background-color: red;
+    }
+    .menuBar{
+        display: inline-block;
+        align-self: center;
+        margin-left:10px;
+    }
+    .wrapper{
+        grid-template-areas: 
+        "main"
+        "leftSide"
+        "rightSide"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 100px;
+    }
+    .navTog:checked ~ .menuItems {
+        display: grid;
+        grid-row-start: 2;
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+    }
+    .menuItems {
+        display: none;
+        padding-right:0 !important;
+    }
+    .menuItems a{
+        font-size: 1.6em;
+    }
+    .card .content{
+        margin:20px 0;
+        font-size: 1.2em;
+    }
+}
+
+ABOUT ++ others
+
+<!DOCTYPE html>
+<html>
+    <head><title>CSS Grid Website 3</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+</head>
+    <body>
+        <div class="navCon">
+            <nav class="navbar">
+                <input type="checkbox" class="navTog" id="navTog">
+                <label for="navTog" class="menuBar"><i class="fas fa-bars"></i></label>
+                <div class="menuItems">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <a href="#" class="logo">MyLOGO</a>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <div id="leftSide">
+                <h2>New Information </h2>
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/fff000/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn blue">Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div id="mainContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit cursus risus at ultrices mi tempus imperdiet nulla</p>
+                <p>Enim blandit volutpat maecenas volutpat blandit aliquam. Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere. Morbi tempus iaculis urna id volutpat lacus laoreet non. Ac tortor vitae purus faucibus ornare suspendisse sed nisi. Semper viverra nam libero justo laoreet sit amet cursus sit. Egestas integer eget aliquet nibh praesent tristique magna sit. Ullamcorper a lacus vestibulum sed arcu non. Cras semper auctor neque vitae tempus quam pellentesque nec. Rutrum quisque non tellus orci ac auctor. Cursus vitae congue mauris rhoncus aenean. Elementum curabitur vitae nunc sed.</p>
+            </div>
+            <aside id="rightSide">
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/0ff0f0/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn red">Read more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://dummyimage.com/600x400/0f0f0f/fff">
+                    <div class="content">
+                        Amet mauris commodo quis imperdiet massa. Risus nec feugiat in fermentum posuere.
+                        <button class="btn green">Read more</button>
+                    </div>
+                </div>
+            </aside>
+            <footer id="mainFooter">Footer Content</footer>
+        </div>
+    </body>
+</html>

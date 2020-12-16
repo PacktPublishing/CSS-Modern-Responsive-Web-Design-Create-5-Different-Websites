@@ -1,0 +1,92 @@
+body{
+
+}
+#wrapper{
+    background-color: #ddd;
+}
+#navbar {
+    position: fixed;
+    top:0;
+    left:0;
+    height:60px;
+    background-color: black;
+    display: block;
+    width:100%;
+    z-index: 10;
+}
+
+#navbar nav{
+    display: flex;
+}
+
+#navbar nav a{
+    flex:0 0 25vw;
+    text-align: center;
+    font-size: 2em;
+    color:#eee;
+    text-decoration: none;
+    height:60px;
+    line-height: 2em;
+    cursor:pointer;
+}
+#navbar nav a:hover{
+    background-color:#222;
+    color:white;
+}
+
+
+
+
+.page{
+    height: auto;
+    min-height:100vh;
+    padding: 60px 10px;
+    background-color: #eee;
+}
+
+
+@media all and (max-width:640px){
+    #navbar nav a{
+        font-size: 1.2em;
+        height:30px;
+    }
+    #navbar{
+        height:30px;
+    }
+}
+
+
+<!DOCTYPE html>
+<html>
+    <head><title>Website 2</title>
+    <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about" >About</a>
+                <a href="#portfolio" >Portfolio</a>
+                <a href="#contact" >Contact</a>
+            </nav>
+        </div>
+        <div id="wrapper">
+            <div id="home" class="page">
+                <h2>Home</h2>
+            </div>
+            <div id="about" class="page">
+                <h2>About</h2>
+            </div>
+            <div id="portfolio" class="page">
+                <h2>Portfolio</h2>
+            </div>
+            <div id="contact" class="page">
+                <h2>Contact</h2>
+            </div>
+            <footer>
+                <h2>Copyright .....</h2>
+            </footer>
+        </div>
+        <script src="app2.js"></script>
+    </body>
+</html>

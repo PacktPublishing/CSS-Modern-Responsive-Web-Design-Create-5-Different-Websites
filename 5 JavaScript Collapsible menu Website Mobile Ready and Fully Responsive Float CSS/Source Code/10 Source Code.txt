@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Website 4</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="barMenu"><i class="fas fa-bars"></i></span>
+            <ul class="navlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="logo">FASTER<i class="fas fa-shipping-fast"></i></div>
+        </nav>
+        <header class="header">
+            <h2>HEADER</h2>
+        </header>
+        <article class="main">
+            <div class="col col-3">
+                <div class="container">
+                    <h2>Column 1</h2>
+                    <div class="para">Arcu cursus euismod quis viverra nibh cras pulvinar mattis. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Cursus euismod quis viverra nibh cras pulvinar mattis. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Consequat semper viverra nam libero justo laoreet. Consectetur adipiscing elit pellentesque habitant morbi tristique. Laoreet id donec ultrices tincidunt arcu non sodales neque. In massa tempor nec feugiat nisl.</div>
+                    <div class="para">Proin sed libero enim sed faucibus turpis in eu mi. Neque viverra justo nec ultrices dui sapien eget mi proin. In hac habitasse platea dictumst quisque sagittis purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam</div>
+                    <div class="para"><img class="thumb" src="https://dummyimage.com/600x400/26e336/fff&text=Image1"></div>
+                    <footer>More information...</footer>
+                </div>
+            </div>
+            <div class="col col-3">
+                <div class="container">
+                    <h2>Column 2</h2>
+                    <div class="para">Ring elit pellentesque habitant morbi tristique. Laoreet id donec ultrices tincidunt arcu non sodales neque. In massa tempor nec feugiat nisl.</div>
+                    <div class="para">Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Tortor vitae purus faucibus ornare suspendisse. Enim ut tellus elementum sagittis vitae et leo duis ut. Ac tortor dignissim convallis aenean et. Massa tempor nec feugiat nisl pretium fusce. In hac habitasse platea dictumst quisque sagittis purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam</div>
+                    <div class="para"><img class="thumb" src="https://dummyimage.com/400x200/303030/fff&text=Image2">Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Tortor vitae purus faucibus ornare suspendisse. Enim ut tellus elementum sagittis vitae et leo duis ut. Ac tortor dignissim convallis aenean et. Massa tempor nec feugiat nisl pretium fusce.</div>
+                    <footer>More information...</footer>
+                </div>
+            </div>
+            <div class="col col-3">
+                <div class="container">
+                    <h2>Column 3</h2>
+                    <div class="para">Wellentesque faucibus ornare suspendisse. Enim ut tellus elementum sagittis vitae et leo duis ut. Ac tortor dignissim convallis aenean et. Massa tempor nec feugiat nisl pretium fusce. In hac habitasse platea dictumst quisque sagittis purus. Eleifend donec pretium vulputate sapien nec sagittis aliquam</div>
+                    <div class="para"><img class="thumb" src="https://dummyimage.com/400x200/e34d43/fff&text=Image3">Blandit volutpat maecenas. Tortor vitae purus faucibus ornare suspendisse. Enim ut tellus elementum sagittis vitae et leo duis ut. Ac tortor dignissim convallis aenean et. Massa tempor nec feugiat nisl pretium fusce.</div>
+                    <footer>More information...</footer>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <h2>FOOTER</h2>
+        </footer>
+
+
+        <script src="app4.js"></script>
+    </body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+    box-sizing: border-box;
+}
+/*
+Light Color #cebbc9;
+Dark #470ff4;
+lighter shade 4056F4
+red Dark #ce2d4f
+lighter shade #ce6d8b;
+*/
+body{
+    background-color: #cebbc9;
+    font-family: 'Nunito', sans-serif;
+}
+.navbar{
+    position: relative;
+    width:90%;
+    height: 60px;
+    background-color:#ce2d4f;
+    color:#cebbc9;
+    margin: 10px auto;
+}
+.navbar:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.navlinks{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.navlinks li{
+    float:left;
+    margin: 5px 10px;
+    padding: 5px;
+}
+.navlinks li:hover{
+    background-color:#ce2d4f
+}
+.navlinks li a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.logo{
+    float: right;
+    margin:5px;
+    font-size: 2.5em;
+    color:#ce6d8b;
+}
+
+.barMenu{
+    float:left;
+    display: none;
+    margin: 10px 15px;
+    font-size: 2em;
+    cursor: pointer;
+}
+.header{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 40px;
+    background-color:#470ff4;
+    color:white;
+}
+.col{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    min-height: 200px;
+    text-align: left;
+}
+.col-3{
+    width: 33.33%;
+}
+.col-2{
+    width: 50%;
+}
+.col-4{
+    width: 25%;
+}
+.thumb{
+    max-width: 100%;
+    border: 5px solid white;
+}
+.para{
+    padding: 5px;
+}
+.container footer{
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #470ff4;
+    color:white;
+     padding: 5px;
+}
+.container{
+    font-size: 0.9em;
+    margin: 10px;
+    background-color: white;
+    color:#ce2d4f;
+}
+.col h2{
+    text-align: center;
+    background-color: #470ff4;
+    text-transform: uppercase;
+    color:white;
+    padding: 5px;
+}
+.main:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color:#470ff4;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    .navlinks li a{
+        font-size: 1em;
+    }
+    .navlinks li{
+        margin: 5px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .col {
+        width: 100%;
+    }
+    .barMenu{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navlinks li{
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+        background-color:#ce6d8b;
+        font-size: 1.4em;
+    }
+    .navbar{
+        width:100%;
+    }
+    .logo{
+        text-align: center;
+        width:100%;
+        padding:5px;
+        margin:auto;
+        background-color:#ce2d4f;
+    }
+}
+
+
+const barMenu = document.querySelector('.barMenu');
+const navLinks = document.querySelector('.navlinks');
+barMenu.addEventListener('click',(e)=>{
+    console.log(navLinks.style.display=='none');
+    if(navLinks.style.display=='block'){
+        navLinks.style.display='none';
+    }else{
+        navLinks.style.display='block';
+    }
+})
+window.onresize = function(){
+    navLinks.style.display='block';
+}
+   
+
+
+console.dir(document);
+console.dir(barMenu);

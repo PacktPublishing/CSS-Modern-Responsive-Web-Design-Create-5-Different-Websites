@@ -1,0 +1,99 @@
+html, body{
+    margin: 0;
+    padding:0;
+}
+.hero{
+    color:white;
+    font-size: 1.5em;
+    background-color: #222;
+    text-align: center;
+    padding:20px;
+}
+.hero h1{
+    font-size: 3em;
+}
+.hero h2{
+    font-size: 2em;
+}
+.header{
+    height: 100px; 
+}
+.section {
+    border:1px solid #ddd;
+    padding:20px 0;
+    background-color: #eee;
+}
+.logo {
+    float:left;
+    background-color: blue;
+    color:white;
+    width:200px;
+    height:50px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul{
+    float:right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+}
+nav ul li:hover a{
+    background-color: white;
+    color:black;
+}
+.mainHeader{
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100px;
+    background-color: #000;
+    width: 100%;
+    z-index: 10;
+    padding:5px;
+}
+
+@media all and (max-width:760px){
+    .mainHeader{
+        height: auto;
+    }
+    .logo {
+        float:none;
+        margin: 10px auto 20px;
+        display: block;
+    }
+    nav ul{
+        float:none;
+        display: block;
+        margin:0 auto;
+        text-align: center;
+    }
+    nav ul li{
+        float: initial;
+        display: inline-block;
+    }
+    nav ul li a{
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+

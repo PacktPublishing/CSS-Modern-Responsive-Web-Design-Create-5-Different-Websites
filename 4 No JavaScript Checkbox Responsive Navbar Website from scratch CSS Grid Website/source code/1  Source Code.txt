@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CSS Grid Website 3</title>
+    <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <div>
+            <nav></nav>
+        </div>
+        <div class="wrapper">
+            <header class="mainHeader">HEADER</header>
+            <div class="leftSide">Left Side</div>
+            <div class="mainContent">Hello World</div>
+            <aside class="rightSide">Right Side</aside>
+            <footer class="mainFooter">Footer Content</footer>
+        </div>
+    </body>
+</html>

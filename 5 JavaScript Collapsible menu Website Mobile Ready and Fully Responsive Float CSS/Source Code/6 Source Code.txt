@@ -1,0 +1,145 @@
+const barMenu = document.querySelector('.barMenu');
+const navLinks = document.querySelector('.navlinks');
+barMenu.addEventListener('click',(e)=>{
+    console.log(navLinks.style.display=='none');
+    if(navLinks.style.display=='block'){
+        navLinks.style.display='none';
+    }else{
+        navLinks.style.display='block'
+    }
+})
+
+
+console.dir(document);
+console.dir(barMenu);
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: relative;
+    width:90%;
+    height: 60px;
+    background-color: #000;
+    color:white;
+    margin: 10px auto;
+}
+.navbar:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+.navlinks{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.navlinks li{
+    float:left;
+    margin: 5px 10px;
+    padding: 5px;
+}
+.navlinks li:hover{
+    background-color: red;
+}
+.navlinks li a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 5px;
+}
+.logo{
+    float: right;
+    margin:5px;
+    font-size: 2.5em;
+    color:red;
+}
+
+.barMenu{
+    float:left;
+    display: none;
+    margin: 10px 15px;
+    font-size: 2em;
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .logo{
+        font-size: 1.5em;
+    }
+    .navlinks li a{
+        font-size: 1em;
+    }
+    .navlinks li{
+        margin: 5px;
+        padding: 0;
+    }
+}
+@media screen and (max-width:700px) {
+  
+    .barMenu{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navlinks li{
+        width: 100%;
+        text-align: center;
+        margin: 0 !important;
+        background-color: black;
+        font-size: 1.4em;
+    }
+    .navbar{
+        width:100%;
+    }
+    .logo{
+        text-align: center;
+        width:100%;
+        padding:5px;
+        margin:auto;
+        background-color: #000;
+    }
+}
+
+
+
+<!DOCTYPE html>
+<html>
+    <head><title>Website 4</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="barMenu"><i class="fas fa-bars"></i></span>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="logo">FASTER<i class="fas fa-shipping-fast"></i></div>
+        </nav>
+        <header>
+            <h2>HEADER</h2>
+        </header>
+        <article>
+            <div class="col"><h2>Column 1</h2></div>
+            <div class="col"><h2>Column 2</h2></div>
+            <div class="col"><h2>Column 3</h2></div>
+        </article>
+        <footer>
+            <h2>FOOTER</h2>
+        </footer>
+
+
+        <script src="app4.js"></script>
+    </body>
+</html>

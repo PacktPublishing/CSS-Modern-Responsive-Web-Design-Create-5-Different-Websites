@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Website 1</title>
+    <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="mainHeader">
+            <div class="logo">LOGO</div>
+            <nav><ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav></div>
+        </header>
+        <div class="section" id="home">
+            <div class="hero">
+            <h1>Welcome to My Site</h1>
+            <h2>This is what the site is about</h2>
+            <div class="calltoaction">This is great information</div>
+        </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="col col-4">
+                    <div class="card">
+                    <img src="https://dummyimage.com/600x400/000/fff">
+                    <p>Hello world about pic above</p>
+                </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/0000ff/fff">
+                        <p>Hello world about pic above</p>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/00ff00/fff">
+                        <p>Hello world about pic above</p>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/ff0000/fff">
+                        <p>Hello world about pic above</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="gallery">
+            
+            <div class="container">
+                <div><h2>Gallery</h2></div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/cc00aa/fff&text=IMAGE1">
+                </div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/00cc00/fff&text=IMAGE2">
+                </div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/00aacc/fff&text=IMAGE3">
+                </div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/ccaa00/fff&text=IMAGE4">
+                </div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/aacc00/fff&text=IMAGE5">
+                </div>
+                <div class="col col-3">
+                    <img src="https://dummyimage.com/500x500/0000cc/fff&text=IMAGE6">
+                </div>
+            </div>
+        </div>
+        <div class="section" id="about">
+            <div class="container">
+                <div><h2>About</h2></div>
+                <div class="col col-2 ">
+                    <div class="box">
+                    <header>Title</header>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet bibendum enim facilisis gravida neque convallis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Diam maecenas ultricies mi eget mauris pharetra. Condimentum mattis pellentesque id nibh tortor id aliquet lectus. Lacus vel facilisis volutpat est velit egestas dui.</div>
+                    <footer>Footer more info</footer>
+                    </div>
+                </div>
+                <div class="col col-2 ">
+                    <div class="box">
+                    <header>Title</header>
+                    <div class="content">Augue mauris augue neque gravida in fermentum et. Nec dui nunc mattis enim ut tellus elementum sagittis. Tempus egestas sed sed risus pretium quam. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Urna duis convallis convallis tellus id. Risus quis varius quam quisque id diam.</div>
+                    <footer>Footer more info</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="services">
+            <div class="container">
+                <div><h2>Services</h2></div>
+                <div class="col col-1 ">
+                    <div class="box">
+                        <header>Title</header>
+                        <div class="content">At varius vel pharetra vel. Enim diam vulputate ut pharetra. Sem integer vitae justo eget magna fermentum iaculis. Mus mauris vitae ultricies leo integer. Egestas pretium aenean pharetra magna. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Lorem ipsum dolor sit amet. Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Turpis egestas maecenas pharetra convallis. Arcu ac tortor dignissim convallis aenean et tortor at risus. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Sapien eget mi proin sed libero enim sed faucibus turpis. Hendrerit dolor magna eget est lorem ipsum. Mauris sit amet massa vitae. Neque viverra justo nec ultrices dui sapien eget mi. Nunc sed blandit libero volutpat sed cras ornare. Sed tempus urna et pharetra pharetra massa massa. Mi sit amet mauris commodo. Orci a scelerisque purus semper eget duis at tellus. Lacinia quis vel eros donec.</div>
+                         <footer>Footer more info</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <div class="container">
+                <div><h2>Contact</h2></div>
+                <div class="col col-1 ">
+                    <div class="mainForm">
+                    <form action="mailto:test@gmail.com" method="POST" enctype="text/plain">
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="username" placeholder="Your Name">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="your email">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="col col-4 bottom">
+                    <h3>Where</h3>
+                    <p>This is where we are</p>
+                </div>
+                <div class="col col-4 bottom">
+                    <h3>Where</h3>
+                    <p>This is where we are</p>
+                </div>
+                <div class="col col-4 bottom">
+                    <h3>Where</h3>
+                    <p>This is where we are</p>
+                </div>
+                <div class="col col-4 bottom">
+                    <h3>Where</h3>
+                    <p>This is where we are</p>
+                </div>
+            </div>
+        </footer>
+        <script src="app1.js"></script>
+    </body>
+
+</html>
+
+* {
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding:0;
+}
+.container{
+    padding: 5px;
+    min-height:100px;
+    position: relative;
+    margin:0 auto;
+}
+.container img{
+    max-width:100%;
+}
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color:white;
+    font-size: 3em;
+}
+.col{
+    float:left;
+    position: relative;
+    padding: 5px;
+}
+.card{
+    border: 1px solid #222;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+.col-4{
+    width:25%;
+}
+.col-3{
+    width:33.3%;
+}
+.col-2{
+    width:50%;
+}
+.col-1{
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+.box{
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.box .content{
+    padding:10px;
+    font-size: 1.4em;
+}
+.box .content::first-letter {
+    font-size: 2em;
+    
+}
+.box header{
+    background-color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    line-height: 45px;
+    font-size: 2em;
+}
+.box footer{
+    background-color: #ddd;
+    text-align: center;
+    color:white;
+    line-height: 45px;
+    font-size: 1.2em;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.mainForm {
+    padding: 25px;
+    background-color: #333;
+    color:white;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color:#ddd;
+    color:#222;
+    font-size: 2em;
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#ededed;
+}
+label{
+    text-align: left;
+    margin: 10px 0;
+    display: block;
+}
+#message{
+    height: 150px;
+}
+#footer{
+    background-color: black;
+    color:white;
+    min-height: 200px;
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+}
+.bottom h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+.bottom p{
+    text-align: center;
+    font-size: 1em;
+}
+.hero{
+    color:white;
+    font-size: 1.5em;
+    background-color: #222;
+    text-align: center;
+    padding:20px;
+}
+.hero h1{
+    font-size: 3em;
+}
+.hero h2{
+    font-size: 2em;
+}
+.header{
+    height: 100px; 
+}
+.section {
+    clear: both;
+    border:1px solid #ddd;
+    padding:20px 0;
+    background-color: #eee;
+    height:auto;
+    overflow: hidden;
+}
+.logo {
+    float:left;
+    background-color: blue;
+    color:white;
+    width:200px;
+    height:50px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul{
+    float:right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+    position: relative;
+}
+nav ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+}
+nav ul li:hover a{
+    background-color: white;
+    color:black;
+}
+.mainHeader{
+    position: fixed;
+    left:0;
+    top:0;
+    height: 100px;
+    background-color: #000;
+    width: 100%;
+    z-index: 10;
+    padding:5px;
+}
+
+@media all and (max-width:760px){
+    .mainHeader{
+        height: auto;
+    }
+    .logo {
+        float:none;
+        margin: 10px auto 20px;
+        display: block;
+    }
+    nav ul{
+        float:none;
+        display: block;
+        margin:0 auto;
+        text-align: center;
+    }
+    nav ul li{
+        float: initial;
+        display: inline-block;
+    }
+    nav ul li a{
+        padding: 0 15px;
+    }
+    .col-4{
+        width:100%;
+    }
+
+}
+
+@media all and (max-width:600px){
+    .col-3, .col-2{
+        width:100%;
+        margin: auto;
+        text-align: center;
+    }
+    .mainForm {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+

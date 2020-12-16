@@ -1,0 +1,9 @@
+    <form action="mailto:test@gmail.com" method="POST" enctype="text/plain">
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="username" placeholder="Your Name">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="your email">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>

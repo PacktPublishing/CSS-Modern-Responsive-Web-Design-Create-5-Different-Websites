@@ -1,0 +1,396 @@
+const linkz = document.querySelectorAll('a[href*="#"]');
+console.log(linkz);
+linkz.forEach((el)=>{
+    console.log(el);
+    el.addEventListener('click',(e)=>{
+        console.log(e);
+        e.preventDefault();
+        let remover = document.querySelector('.active');
+        if(remover != null){
+            remover.classList.remove('active');
+        }
+        el.classList.add('active');
+        console.log(el.hash);
+        let stopX = document.querySelector(el.hash).offsetTop;
+        let startX = document.documentElement.scrollTop;
+        console.log(stopX);
+        console.log(startX);
+        myMove(startX,stopX);
+    })
+})
+
+function myMove(startX,stopX){
+    const speed = 10;
+    const pos = stopX > startX ? 1 : -1;
+    let move = Math.floor((stopX - startX)*pos/speed);
+    const adder = pos * speed;
+    console.log(move,adder);
+    let framez = setInterval(frame,1);
+    function frame(){
+        if(move<0){
+            clearInterval(framez );
+        }
+        else{
+            move--;
+            startX = startX + adder;
+            document.documentElement.scrollTop =  startX;
+            console.log(startX);
+        }
+    }
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color:#222;
+}
+#wrapper{
+    background-color: #ddd;
+}
+#navbar {
+    position: fixed;
+    top:0;
+    left:0;
+    height:60px;
+    background-color: black;
+    display: block;
+    width:100%;
+    z-index: 10;
+}
+
+#navbar nav, .row{
+    display: flex;
+}
+
+#navbar nav a{
+    flex:0 0 25vw;
+    text-align: center;
+    font-size: 2em;
+    color:#eee;
+    text-decoration: none;
+    height:60px;
+    line-height: 2em;
+    cursor:pointer;
+}
+#navbar nav a:hover{
+    background-color:#222;
+    color:white;
+}
+
+
+#homeREMOVE{
+    background-image: url('https://lorempixel.com/output/abstract-q-c-640-480-3.jpg');
+    background-size: cover;
+}
+.active{
+    background-color: red;
+    
+}
+.page{
+    height: auto;
+    min-height:100vh;
+    padding: 60px 10px;
+    background-color: #eee;
+}
+.jumbotron{
+    background-color: rgba(255,255,255,0.5);
+    width:80%;
+    margin:100px auto;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 10px;
+    padding:20px;
+}
+.jumbotron h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    color:black;
+}
+.jumbotron h3{
+    font-size: 2em;
+    color:#222;
+}
+
+.col{
+    flex:1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    flex: 0 0 30%;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding:10px;
+    margin:10px 0;
+}
+.card img{
+    max-width: 100%;
+}
+.card h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    padding:0px;
+    margin:0;
+}
+.card .output{
+    padding: 0 20px 20px;
+}
+.card .output > button{
+    background-color: lightgrey;
+    border: 0;
+    color:white;
+    padding:10px;
+    width:100%;
+}
+
+
+
+.main{
+    background-color: white;
+    min-height: 60vh;
+    padding:10px;
+    font-size: 1.2em;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 500px;
+    text-align: left;
+    padding:10px;
+    max-width: 800px;
+    margin:0 auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.rowForm {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.rowForm .name, .rowForm .email{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 45%;
+}
+.myForm .subject,.myForm .message{
+    width:80%;
+    margin: 0 auto;
+}
+#email, #name, #subject{
+    width: 100%;
+    height:50px;
+    font-size: 1.5em;
+}
+#message {
+    width: 100%;
+    font-size: 1.5em;
+}
+.message button{
+    height: 70px;
+    width:100%;
+    background-color: salmon;
+    font-size: 2em;
+}
+
+label {
+    color:white;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.page > h2{
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding:8px;
+    font-size: 3em;
+}
+
+.footer{
+    min-height : 200px;
+    text-align: center;
+    color:#ddd;
+    font-size: 1em;
+    padding: 20px;
+    background-color: black;
+
+}
+.main::first-letter{
+    font-size: 2em;
+    color:black;
+    text-transform: uppercase;
+}
+
+@media all and (max-width:640px){
+    #navbar nav a{
+        font-size: 1.2em;
+        height:30px;
+    }
+    #navbar{
+        height:30px;
+    }
+    .row , .rowForm{
+        flex-direction: column;
+    }
+    .card{
+        flex: auto;
+    }
+    .rowForm .name, .rowForm .email{
+        width: 100%;
+        display: block;
+  
+    }
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head><title>Website 2</title>
+    <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="navbar">
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about" >About</a>
+                <a href="#portfolio" >Portfolio</a>
+                <a href="#contact" >Contact</a>
+            </nav>
+        </div>
+        <div id="wrapper">
+            <div id="home" class="page">
+                <div class="jumbotron">
+                    <h2>Welcome to My Site</h2>
+                    <h3>This is the best website anywhere!</h3>
+                </div>
+            </div>
+            <div id="about" class="page">
+                <h2>About</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="main">Augue ut lectus arcu bibendum. Maecenas volutpat blandit aliquam etiam. Dictum fusce ut placerat orci. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Euismod in pellentesque massa placerat duis ultricies lacus sed. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Amet tellus cras adipiscing enim eu. Elementum tempus egestas sed sed risus pretium. Libero justo laoreet sit amet. Orci nulla pellentesque dignissim enim sit amet venenatis. Ultrices in iaculis nunc sed augue lacus viverra vitae.</div>
+                    </div>
+                    <div class="col">
+                        <div class="main">Et odio pellentesque diam volutpat. Vel facilisis volutpat est velit egestas dui id. Sit amet volutpat consequat mauris nunc congue nisi vitae. Sed viverra tellus in hac habitasse platea. Duis tristique sollicitudin nibh sit amet commodo nulla. Amet massa vitae tortor condimentum lacinia quis. Augue mauris augue neque gravida. Ultricies mi eget mauris pharetra et. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Elit eget gravida cum sociis natoque penatibus et magnis dis</div>
+                    </div>
+                    <div class="col">
+                        <div class="main">Viverra justo nec ultrices dui. Mattis nunc sed blandit libero volutpat sed cras ornare. Non enim praesent elementum facilisis leo vel fringilla est. Ac ut consequat semper viverra nam libero justo laoreet. Nulla facilisi morbi tempus iaculis. Id velit ut tortor pretium viverra suspendisse potenti nullam.</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="main">ros donec ac odio tempor orci dapibus ultrices in. Dui id ornare arcu odio ut sem. Turpis egestas integer eget aliquet nibh praesent tristique magna. Augue ut lectus arcu bibendum. Maecenas volutpat blandit aliquam etiam. Dictum fusce ut placerat orci. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Euismod in pellentesque massa placerat duis ultricies lacus sed. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio" class="page">
+                <h2>Portfolio</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/000/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/00ff00/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/f00f00/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/00ffff/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/ffff00/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://dummyimage.com/600x400/ff0000/fff">
+                        <div class="output">
+                            <h3>Heading</h3>
+                            <p>Wow this is excellent content</p>
+                            <button>Find out more....</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="contact" class="page">
+                <h2>Contact</h2>
+                <form class="myForm">
+                    <div class="rowForm">
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email">
+                    </div>
+                </div>
+                    <div class="subject">
+                        <label for="subject">Subject:</label>
+                        <input id="subject" type="text" name="subject">
+                    </div>
+                    <div class="message">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <footer class="footer">
+                <h2>Copyright .....</h2>
+            </footer>
+        </div>
+        <script src="app2.js"></script>
+    </body>
+</html>

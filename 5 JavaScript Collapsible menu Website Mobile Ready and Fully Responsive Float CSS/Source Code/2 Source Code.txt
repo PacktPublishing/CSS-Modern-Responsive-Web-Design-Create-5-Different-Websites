@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Website 4</title>
+    <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <nav>
+            <span>BarMenu</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="logo">LOGO</div>
+        </nav>
+        <header>
+            <h2>HEADER</h2>
+        </header>
+        <article>
+            <div class="col"><h2>Column 1</h2></div>
+            <div class="col"><h2>Column 2</h2></div>
+            <div class="col"><h2>Column 3</h2></div>
+        </article>
+        <footer>
+            <h2>FOOTER</h2>
+        </footer>
+
+
+        <script src="app4.js"></script>
+    </body>
+</html>

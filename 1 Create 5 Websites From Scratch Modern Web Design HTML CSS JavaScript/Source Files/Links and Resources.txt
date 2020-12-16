@@ -1,0 +1,61 @@
+Editor : 
+
+Code editing. Free. Built on open source. Runs everywhere. 
+
+https://code.visualstudio.com/
+
+DevTools Chrome DevTools 
+
+is a set of web developer tools built directly into the Google Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster.
+
+There are many ways to open DevTools, because different users want quick access to different parts of the DevTools UI.
+
+Open DevTools
+
+There are many ways to open DevTools, because different users want quick access to different parts of the DevTools UI.
+
+When you want to work with the DOM or CSS, right-click an element on the page and select Inspect to jump into the Elements panel. Or press Command+Option+C (Mac) or Control+Shift+C (Windows, Linux, Chrome OS).
+
+When you want to see logged messages or run JavaScript, press Command+Option+J (Mac) or Control+Shift+J (Windows, Linux, Chrome OS) to jump straight into the Console panel.
+
+https://developers.google.com/web/tools/chrome-devtools
+
+Draw - create wireframe - https://app.diagrams.net/ draw.io
+
+Placeholder Images - 
+
+https://dummyimage.com/
+
+https://lorempixel.com/
+
+Placeholder text - https://loremipsum.io/
+
+Google Fonts
+
+https://fonts.google.com/
+
+Browser
+
+https://developers.google.com/web/tools/chrome-devtools
+
+Text Generator 
+
+https://www.freeformatter.com/lorem-ipsum-generator.html#ad-output
+
+Color Palette
+
+https://coolors.co/
+
+FontAwesome Icons
+
+CDN link files for FontAwesome
+
+https://cdnjs.com/libraries/font-awesome
+
+Font Awesome main site 
+
+https://fontawesome.com/
+
+WireFrame and Sketch Website
+
+draw.io https://app.diagrams.net/

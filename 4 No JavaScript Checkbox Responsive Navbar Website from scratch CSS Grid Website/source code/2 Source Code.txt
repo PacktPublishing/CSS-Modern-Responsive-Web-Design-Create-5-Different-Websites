@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CSS Grid Website 3</title>
+    <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <div>
+            <nav></nav>
+        </div>
+        <div class="wrapper">
+            <header id="mainHeader">HEADER</header>
+            <div id="leftSide">Left Side</div>
+            <div id="mainContent">Hello World</div>
+            <aside id="rightSide">Right Side</aside>
+            <footer id="mainFooter">Footer Content</footer>
+        </div>
+    </body>
+</html>
+
+body{
+    
+}
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main leftSide rightSide"
+    "footer footer footer";
+    grid-template-columns: 1fr 20% 20%;
+    grid-template-rows: 100px 1fr 200px;
+    grid-row-gap:10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+#mainHeader{
+    grid-area:header;
+}
+#leftSide{
+    grid-area: leftSide;
+}
+#mainContent{
+    grid-area: main;
+}
+#rightSide {
+    grid-area: rightSide;
+}
+#mainFooter {
+    grid-area:footer;
+}
+
+.wrapper > * {
+    border: 1px solid black;
+    background-color: #eee;
+    border-radius: 10px;
+    padding:15px;
+}
